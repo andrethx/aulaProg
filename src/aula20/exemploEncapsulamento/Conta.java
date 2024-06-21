@@ -3,7 +3,7 @@ package aula20.exemploEncapsulamento;
 import java.util.Random;
 
 public class Conta {
-    String titular;
+    private String titular;
     private String identificador;
     private float saldo;
     //criando um atributo estatico
@@ -14,6 +14,14 @@ public class Conta {
         this.identificador = identificador;
         this.saldo = saldo;
         geraIdentificador();
+    }
+
+    public String getTitular(){
+        return titular;
+    }
+
+    public void setTitular(String titular){
+        this.titular = titular;
     }
 
     public String getIdentificador(){
